@@ -8,12 +8,23 @@
 
   <body>
     <h1>Qual o seu próximo livro?</h1>
-      
-      <ul>
-    <li>Essa</li>
-      <li>My favorite site is <a href="https://github.com">GitHub</a>!</li>
-    <li>aleatoria</li>
-</ul>
+    <script>
+<!--
+
+var randomlinks=new Array()
+
+randomlinks[0]="https://trello-attachments.s3.amazonaws.com/5e56d43fa15a910826221960/5e57bf8a4d7c128cb956ac1c/c4f4a35bccca2f3cd02e5b8758e89c4d/Woman_Hating_by_Andrea_Dworkin_traduzido_por_Carol_Correia_pdf.pdf"
+randomlinks[1]="https://trello-attachments.s3.amazonaws.com/5e56d43fa15a910826221960/5e57bfda0bae5449f1e3e41a/5ce7d4c505d193249c18a583076a8e88/RIBEIRO_Djamila._O_que_e_lugar_de_fala.pdf"
+randomlinks[2]="https://trello-attachments.s3.amazonaws.com/5e56d43fa15a910826221960/5ea044929f7d92317a15a806/a949eed6cfc2800bcdc4edb7ca055576/-_butler-problemasdegenero-ocr.pdf"
+
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
+</script>
+<form method="post">
+<p><input type="button" name="B1" value="Clique aqui para achar um livro >>" onclick="randomlink()"></p> </form>
+
       
   </body>
 
